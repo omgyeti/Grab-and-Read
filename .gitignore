@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+ocr_output.txt
+captures/
+pdf_pages/
+ocr_combined.pdf
+.env
+.DS_Store

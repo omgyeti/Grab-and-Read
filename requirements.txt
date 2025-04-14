@@ -1,0 +1,8 @@
+pyautogui
+pillow
+keyboard
+mouse
+pytesseract
+pystray
+plyer
+PyPDF2

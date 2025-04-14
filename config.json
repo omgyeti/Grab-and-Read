@@ -1,0 +1,7 @@
+{
+  "tesseract_path": "Tesseract/tesseract.exe",
+  "region1": [50, 250, 3150, 1050],
+  "region2": [946, 298, 1550, 972],
+  "output_text": "ocr_output.txt",
+  "combined_pdf": "ocr_combined.pdf"
+}
