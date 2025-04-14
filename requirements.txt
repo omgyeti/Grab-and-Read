@@ -1,8 +1,8 @@
-pyautogui
-pillow
+mss
 keyboard
 mouse
+Pillow
 pytesseract
-pystray
-plyer
 PyPDF2
+pystray
+screeninfo

@@ -1,46 +1,50 @@
 # Grab&Read
 
-**Grab&Read** is a hotkey-driven OCR utility that captures regions of your screen and extracts text into a readable `.txt` file and a searchable `.pdf`.
+**Grab&Read** is a hotkey-driven, background OCR utility that captures regions of your screen and extracts text into a readable `.txt` file and a searchable `.pdf`.
 
-It runs silently in the **Windows system tray**, listens for **numpad hotkeys**, and shows **native notifications** when actions complete — no terminal needed.
+It runs quietly in the system tray, listens for **numpad hotkeys**, and works with **multi-monitor setups** using native Windows screen capture.
 
 ---
 
 ## 🚀 Features
 
-- ✅ Trigger screen captures using your **numpad**
-- ✅ Frozen-screen selector for drag-and-capture
-- ✅ Background process – no terminal window
-- ✅ Native system notifications (via `plyer`)
-- ✅ System tray icon with exit menu (via `pystray`)
-- ✅ Automatically merges OCR into a single PDF
-- OCR powered by [Tesseract OCR](https://github.com/tesseract-ocr/tesseract)
+- ✅ **Hotkey capture** via numpad
+- ✅ **Multi-monitor** support using `mss`
+- ✅ **Frozen screen selector** for drag-to-capture
+- ✅ System tray menu with:
+  - 📝 Config file editor
+  - ✅ OCR toggle
+  - 📄 PDF generation toggle
+  - 🖼️ Screenshot-only mode when both are off
+- ✅ Searchable multi-page PDF builder
+- ✅ Screenshot popup with image preview
 
 ---
 
 ## ⌨️ Hotkeys
 
-| Key        | Action                             |
-|------------|------------------------------------|
-| Numpad 1   | Capture fixed region 1             |
-| Numpad 2   | Capture fixed region 2             |
-| Numpad 3   | Click-and-drag on a frozen screen  |
-| Tray Menu | Right-click icon → Quit             |
+| Key        | Action                            |
+|------------|-----------------------------------|
+| Numpad 1   | Capture **Region 1** from config  |
+| Numpad 2   | Capture **Region 2** from config  |
+| Numpad 3   | **Click-and-drag** custom region  |
+| Tray Menu | Enable/disable features or quit   |
 
 ---
 
 ## 🛠 Setup
 
-### 1. Install Tesseract OCR
+### 1. Install [Tesseract OCR](https://github.com/tesseract-ocr/tesseract)
 
-- [Download Tesseract](https://github.com/tesseract-ocr/tesseract)
-- Install and note the path to `tesseract.exe`
+Make sure you add the Tesseract `tesseract.exe` path to your config.
 
-### 2. Install Python dependencies
+---
+
+### 2. Install dependencies
 
 ```bash
 pip install -r requirements.txt
-```
+
 
 <details>
 <summary>📦 requirements.txt contents</summary>
